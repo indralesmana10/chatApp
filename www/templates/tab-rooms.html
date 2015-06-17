@@ -1,0 +1,31 @@
+<ion-view view-title="Rooms" class="has-header">
+    <ion-content>
+        <!--<ion-list ng-show="rooms">
+            <ion-item class="item-icon-left" ng-repeat="room in rooms" type="item-text-wrap" ng-click="openChatRoom(room.id)">
+                <i class="icon {{room.icon}}"></i>
+                <h2>{{room.name}}</h2>
+            </ion-item>
+        </ion-list>-->
+        <ion-list ng-show="contacts">
+            <ion-item class="item-icon-left" ng-repeat="contact in contacts" type="item-text-wrap" ng-click="openChatRoom(contact.email)">
+                <i class="icon ion-person"></i>
+                <h2>{{contact.email}}</h2>
+            </ion-item>
+        </ion-list>
+        <ion-list ng-show="!contacts.length">
+            <ion-item class="item-icon-left" type="item-text-wrap">
+                <i class="icon ion-information-circled"></i>
+                <h2>No Contact</h2>
+            </ion-item>
+        </ion-list>
+        <!--<ion-list ng-hide="rooms">
+            <ion-item class="textCenter">
+                <i class="icon ion-loading-c"></i> Loading Rooms
+            </ion-item>
+        </ion-list>-->
+        <br>
+        <br>
+        <br>
+        <button ng-click="modal.show()" class="button button-positive">Add Contact</button>
+    </ion-content>
+</ion-view>
