@@ -255,7 +255,7 @@ angular.module('mychat.controllers', [])
 
                 
 
-               /* usersListRef.once('value', function(allUsersSnapshot) {
+                usersListRef.once('value', function(allUsersSnapshot) {
          
                     allUsersSnapshot.forEach(function(userSnapshot) {
                         var usersEmail = userSnapshot.child('user_info').child('email').val();
@@ -268,7 +268,7 @@ angular.module('mychat.controllers', [])
                         };
                     });
 
-                });*/
+                });
 
                 
 
